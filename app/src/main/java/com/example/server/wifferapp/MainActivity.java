@@ -4,6 +4,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,6 +14,14 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    public void actionAutenticarse(View view) {
+    }
+
+    public void actionRegistrarse(View view) {
+    }
+
+    public void actionAcercaDe(View view) {
+    }
 
 
 //    @Override
