@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Nueva Red"
+        android:gravity="center"
+        android:textSize="20pt"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="BSSID [EJ: 00:11:22:33:44:55] "
+        android:id="@+id/ETbssid"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="ESSID [Nombre de la red]"
+        android:id="@+id/ETessid"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Banda [2.4Ghz - 5Ghz]"
+        android:id="@+id/ETbanda"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Seguridad [WEP - WPA - WPA2]"
+        android:id="@+id/ETseguridad"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="WPS? [1 - 0]"
+        android:id="@+id/ETwps"/>
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="CREAR NUEVA RED"
+        android:onClick="crearNuevaRed"/>
+
+</LinearLayout>

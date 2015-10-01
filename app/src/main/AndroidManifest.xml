@@ -19,6 +19,8 @@
         <activity android:name=".Registrarse" android:label="Registrarse"/>
         <activity android:name=".Autenticarse" android:label="Autenticarse"/>
         <activity android:name=".Wiffer" android:label="Wiffer"/>
+        <activity android:name=".VerRedes" android:label="VerRedes"/>
+        <activity android:name=".IngresarRed" android:label="IngresarRed"/>
     </application>
 
 </manifest>
