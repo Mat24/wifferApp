@@ -1,9 +1,11 @@
 package com.example.server.wifferapp;
 
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
@@ -53,10 +55,14 @@ public class Autenticarse extends AppCompatActivity {
             String[] parts = s.split(":");
             if(parts[0].equals("AUTORIZADO")){
                 String TOKEN = parts[1];
+                SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
+                SharedPreferences.Editor editor = preferences.edit();
+                editor.putString("token",TOKEN);
+                editor.commit();
                 Toast.makeText(getApplicationContext(),parts[1],Toast.LENGTH_LONG).show();
-                // Inicia el activity menu
-                // Intent i = new Intent(getApplicationContext(),MainActivity.class);
-                // startActivity(i);
+                // Inicia el activity wiffer ( Menu principal de operaciones de la APP )
+                Intent i = new Intent(getApplicationContext(),Wiffer.class);
+                startActivity(i);
             } else {
                 Toast.makeText(getApplicationContext(),parts[1],Toast.LENGTH_LONG).show();
             }
