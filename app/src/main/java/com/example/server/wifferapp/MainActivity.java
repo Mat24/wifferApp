@@ -16,6 +16,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void actionAutenticarse(View view) {
+        Intent i = new Intent(this, Autenticarse.class);
+        startActivity(i);
     }
 
     public void actionRegistrarse(View view) {
