@@ -9,6 +9,7 @@ import android.preference.PreferenceManager;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.Toast;
 
 import java.io.IOException;
@@ -20,6 +21,7 @@ public class Autenticarse extends AppCompatActivity {
     String URL = "http://blackserver.me:4000/api/user/login";
     EditText username;
     EditText password;
+    ImageView locker;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -28,6 +30,9 @@ public class Autenticarse extends AppCompatActivity {
 
         username = (EditText) findViewById(R.id.inicioUsuario);
         password = (EditText) findViewById(R.id.inicioPassword);
+
+        locker = (ImageView) findViewById(R.id.locker);
+        locker.setImageResource(R.drawable.lock);
     }
 
     public void login(View view) {
@@ -54,6 +59,7 @@ public class Autenticarse extends AppCompatActivity {
             super.onPostExecute(s);
             String[] parts = s.split(":");
             if(parts[0].equals("AUTORIZADO")){
+                locker.setImageResource(R.drawable.unlock);
                 String TOKEN = parts[1];
                 SharedPreferences preferences = PreferenceManager.getDefaultSharedPreferences(getApplicationContext());
                 SharedPreferences.Editor editor = preferences.edit();
