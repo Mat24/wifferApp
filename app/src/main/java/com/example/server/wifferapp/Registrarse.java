@@ -15,7 +15,7 @@ import java.io.IOException;
  * Created by server on 30/09/15.
  */
 public class Registrarse extends AppCompatActivity {
-    String URL = "http://192.168.80.106:4000/api/user/create";
+    String URL = "http://blackserver.me:4000/api/user/create";
 
     EditText nickname;
     EditText username;

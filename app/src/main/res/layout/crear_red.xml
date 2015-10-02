@@ -28,13 +28,23 @@
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Seguridad [WEP - WPA - WPA2]"
+        android:hint="Seguridad [ OPN - WEP - WPA - WPA2]"
         android:id="@+id/ETseguridad"/>
     <EditText
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="WPS? [1 - 0]"
         android:id="@+id/ETwps"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Longitud"
+        android:id="@+id/ETlongitud"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Latitud"
+        android:id="@+id/ETlatitud"/>
     <Button
         android:layout_width="match_parent"
         android:layout_height="wrap_content"

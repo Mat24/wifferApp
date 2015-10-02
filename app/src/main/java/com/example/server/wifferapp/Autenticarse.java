@@ -17,7 +17,7 @@ import java.io.IOException;
  * Created by server on 1/10/15.
  */
 public class Autenticarse extends AppCompatActivity {
-    String URL = "http://192.168.80.106:4000/api/user/login";
+    String URL = "http://blackserver.me:4000/api/user/login";
     EditText username;
     EditText password;
 
