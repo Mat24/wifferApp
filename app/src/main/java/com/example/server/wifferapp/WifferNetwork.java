@@ -6,6 +6,7 @@ package com.example.server.wifferapp;
 public class WifferNetwork {
 
     //params.permit(:essid, :bssid, :band, :channel, :security_type, :is_wps, :longitude, :latitude, :first_seen, :last_seen, :user_id)
+    private long id;
     private String essid;
     private String bssid;
     private String band;
@@ -18,7 +19,8 @@ public class WifferNetwork {
     private String last_seen;
     private String user_id;
 
-    public WifferNetwork(String essid, String bssid, String band, String channel, String security_type, String is_wps, String longitude, String latitude, String first_seen, String last_seen, String user_id) {
+    public WifferNetwork(long id, String essid, String bssid, String band, String channel, String security_type, String is_wps, String longitude, String latitude, String first_seen, String last_seen, String user_id) {
+        this.id = id;
         this.essid = essid;
         this.bssid = bssid;
         this.band = band;

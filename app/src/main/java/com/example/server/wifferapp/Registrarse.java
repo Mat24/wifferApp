@@ -59,7 +59,7 @@ public class Registrarse extends AppCompatActivity {
         protected void onPostExecute(String s) {
             super.onPostExecute(s);
 
-            if(s.equals("USER_CREATED")) {
+            if(s.equals("OK:USER_CREATED")) {
                 Toast.makeText(getApplicationContext(), "Se ha creado el usuario, porfavor inicie sesion", Toast.LENGTH_LONG).show();
                 Intent i = new Intent(getApplicationContext(),MainActivity.class);
                 startActivity(i);

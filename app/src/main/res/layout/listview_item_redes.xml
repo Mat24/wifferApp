@@ -6,13 +6,16 @@
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Lista de redes registradas"
-        android:gravity="center"
-        android:textSize="10pt"/>
-    <ListView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:id="@+id/IVRedes">
+        android:text="Titular"
+        android:textStyle="bold"
+        android:textSize="14pt"
+        android:id="@+id/noti_titular"/>
 
-    </ListView>
+    <TextView
+        android:layout_marginLeft="50px"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Este es el predicado del titular, otro texto para hacer que sea mas largo"
+        android:id="@+id/noti_contenido"/>
+
 </LinearLayout>
